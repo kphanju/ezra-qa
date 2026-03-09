@@ -27,6 +27,13 @@ object TestConfig {
     val stripeCardSuccess: String = "pm_card_visa"
     val stripeCardDeclined: String = "pm_card_visa_chargeDeclined"
 
+    val portalUrl: String = prop("ezra.portal.url", "EZRA_PORTAL_URL")
+        ?: "https://myezra-staging.ezra.com"
+
+    val headless: Boolean = prop("ezra.headless", "EZRA_HEADLESS")?.lowercase() != "false"
+
+    val uiTimeoutSeconds: Long = 15L
+
     private fun prop(sysProp: String, envVar: String): String? =
         System.getProperty(sysProp)?.takeIf { it.isNotBlank() }
             ?: System.getenv(envVar)?.takeIf { it.isNotBlank() }

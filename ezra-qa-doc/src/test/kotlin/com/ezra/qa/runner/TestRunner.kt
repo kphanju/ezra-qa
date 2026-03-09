@@ -7,7 +7,10 @@ import org.junit.runner.RunWith
 @RunWith(Cucumber::class)
 @CucumberOptions(
     features = ["classpath:features"],
-    glue = ["com.ezra.qa.steps"],
+    glue = [
+        "com.ezra.qa.steps.api",
+        "com.ezra.qa.steps.ui"
+    ],
     plugin = ["pretty", "html:build/reports/cucumber/cucumber.html"],
     tags = "not @skip"
 )
