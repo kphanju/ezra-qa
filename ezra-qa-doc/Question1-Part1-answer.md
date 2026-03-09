@@ -1,7 +1,12 @@
 # 🩺 Ezra Health — Booking Flow Test Cases
 ### Senior QA Take-Home Assignment
-> Test cases ranked from **most critical** to **least critical** across the full booking flow:
-> Plan Selection → Service Center → Schedule → Payment
+
+## Question 1
+### Part1
+The booking flow is integral to Ezra's business operation. Please go through the first
+three steps of the booking process including payment and devise 15 test cases
+throughout the entire process you think are the most important. When submitting the
+assignment, please return the test cases from the most important to the least important.
 
 ---
 
