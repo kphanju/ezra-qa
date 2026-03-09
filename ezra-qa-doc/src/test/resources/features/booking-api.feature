@@ -1,4 +1,4 @@
-# Created by kphanju at 3/8/26
+# Sample cases created by kphanju at 3/8/26
 Feature: API tests for Booking
 
   Background:
